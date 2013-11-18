@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Adventure Games</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script type="text/javascript" src="js/informacion.js"></script>
+	<script>
+    
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 960,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+    
+</head>
+<body onLoad="informacion();">
+<div class="container">
+
+<header> 
+	<div id="logo"><a href=""><img src="./images/logo.png"/></a></div>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="all.html">Sagas</a></li>
+			<li><a href="info.html">Acerca de la página...</a></li>
+		</ul>
+	</nav>
+</header>
+	
+<div class="feature">	
+	<div class="rslides_container">
+		<ul class="rslides" id="slider">
+			<li><a href="sagas.html?saga=0"><img src="images/slidezelda.jpg"/></a></li>
+			<li><a href="sagas.html?saga=1"><img src="images/slidedmc.jpg"/></a></li>
+			<li><a href="sagas.html?saga=2"><img src="images/slidedead.jpg"/></a></li>
+			<li><a href="sagas.html?saga=3"><img src="images/slidesilent.jpg"/></a></li>
+		</ul>
+	</div>
+</div>	
+
+<section id="content">
+	<div class="zerogrid">
+		<div class="row block">
+
+			<div class="main-content col10">
+				
+				<div class="row">
+					<div class="col05 offleft">
+						<article>
+							<div class="heading">
+								<img src="images/zelda2.jpg"/>
+								<h2><a href="sagas.html?saga=0">The Legend of Zelda</a></h2>
+							</div>
+							<div class="content">
+									<li><a href="entrega.html?saga=0&entrega=0">The Legend Of Zelda</a></li>
+									<li><a href="entrega.html?saga=0&entrega=1">A Link To The Past</a></li>
+									<li><a href="entrega.html?saga=0&entrega=2">Ocarina Of Time</a></li>
+									<li><a href="entrega.html?saga=0&entrega=3">Majora's Mask</a></li>
+									<li><a href="entrega.html?saga=0&entrega=4">Wind Waker</a></li>
+									<li><a href="entrega.html?saga=0&entrega=5">Minish Cap</a></li>
+									<li><a href="entrega.html?saga=0&entrega=6">Twilight Princess</a></li>
+									<li><a href="entrega.html?saga=0&entrega=7">Skyward Sword</a></li>
+							</div>
+						</article>
+						<article>
+							<div class="heading">
+								<img src="images/devil1.jpg"/>
+								<h2><a href="sagas.html?saga=1">Devil May Cry</a></h2>
+							</div>
+							<div class="content">
+								<li><a href="entrega.html?saga=1&entrega=0">Devil May Cry</a></li>
+								<li><a href="entrega.html?saga=1&entrega=1">Devil May Cry 2</a></li>
+								<li><a href="entrega.html?saga=1&entrega=2">Devil May Cry 3: Dante's Awakening</a></li>
+								<li><a href="entrega.html?saga=1&entrega=3">Devil May Cry 4</a></li>
+								<li><a href="entrega.html?saga=1&entrega=4">DMC</a></li>
+							</div>
+						</article>
+					</div>
+					<div class="col05 offright">
+						<article>
+							<div class="heading">
+								<img src="images/silent1.jpg"/>
+								<h2><a href="sagas.html?saga=2">Silent Hill</a></h2>
+							</div>
+							<div class="content">
+								<li><a href="entrega.html?saga=2&entrega=0">Silent Hill</a></li>
+								<li><a href="entrega.html?saga=2&entrega=1">Silent Hill 2</a></li>
+								<li><a href="entrega.html?saga=2&entrega=2">Silent Hill 3</a></li>
+								<li><a href="entrega.html?saga=2&entrega=3">Silent Hill 4: The Room</a></li>
+							</div>
+						</article>
+						<article>
+							<div class="heading">
+								<img src="images/space.jpg"/>
+								<h2><a href="sagas.html?saga=3">Dead Space</a></h2>
+							</div>
+							<div class="content">
+								<li><a href="entrega.html?saga=3&entrega=0">Dead Space</a></li>
+								<li><a href="entrega.html?saga=3&entrega=1">Dead Space 2</a></li>
+								<li><a href="entrega.html?saga=3&entrega=2">Dead Space 3</a></li>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+			
+			<div class="sidebar col06 offall" style="float:right;">
+				<section>
+					<div class="heading">Sagas</div>
+					<div class="content">
+						<ul class="list">
+							<li><a href="sagas.html?saga=0">The Legend Of Zelda</a></li>
+							<li><a href="sagas.html?saga=1">Devil May Cry</a></li>
+							<li><a href="sagas.html?saga=2">Silent Hill</a></li>
+							<li><a href="sagas.html?saga=3">Dead Space</a></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div class="heading">Acerca de...</div>
+					<div class="content">
+					<ul class="list">
+						<li><a href="info.html">La página</a></li>
+					</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+</footer>
+<div id="copyright">
+	<p>Copyright © 2013</p>
+	<p>Adventure Games by <a href="info.html">Andres Orellana</a></p>
+</div>
+</div>
+</body></html>
